@@ -11,6 +11,9 @@
 **Slicing a dataset**  
   * https://lewtun.github.io/blog/til/nlp/pytorch/2021/01/24/til-slicing-torch-datasets.html  
   
+**Dataloader arguments** 
+  * https://subinium.github.io/pytorch-dataloader/  
+  
 **Pytorch image augmentations**  
   * http://incredible.ai/pytorch/2020/04/25/Pytorch-Image-Augmentation/  
   
