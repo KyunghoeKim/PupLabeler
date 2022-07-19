@@ -33,5 +33,8 @@
 **PyTorch ResNet18 code review**  
   * https://yhkim4504.tistory.com/3
   
-**Not useful**  
+**CUDA out of memory**  
+  * https://discuss.pytorch.kr/t/cuda-out-of-memory/216/6
+  
+**Not useful (Book)**  
   * https://ko.d2l.ai/chapter_deep-learning-basics/weight-decay.html
