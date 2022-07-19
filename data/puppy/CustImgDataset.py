@@ -6,10 +6,11 @@ from torchvision.io import read_image
 
 
 class PuppyImageDataset(Dataset):
-    def __init__(self, annotations_file, img_dir, devide_by, remainder, transform=None, target_transform=None):
-        img_labels_raw = pd.read_csv(annotations_file, names=['file_name', 'label'])
-        series_mask = pd.Series([i for i in range(len(img_labels_raw))]).mod(devide_by).isin(remainder)
-        self.img_labels = img_labels_raw.loc[series_mask, :]
+    def __init__(self, annotations_file, img_dir, transform=None, target_transform=None):
+        # img_labels_raw = pd.read_csv(annotations_file, names=['file_name', 'label'])
+        # series_mask = pd.Series([i for i in range(len(img_labels_raw))]).mod(devide_by).isin(remainder)
+        # self.img_labels = img_labels_raw.loc[series_mask, :]
+        self.img_labels = pd.read_csv(annotations_file, names=['file_name', 'label'])
         self.img_dir = img_dir
         self.transform = transform
         self.target_transform = target_transform
